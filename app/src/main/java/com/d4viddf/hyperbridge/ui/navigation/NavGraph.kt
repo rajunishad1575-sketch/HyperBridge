@@ -95,6 +95,9 @@ fun mainNavGraph(
     entry<Screen.Setup> {
         SetupHealthScreen(onBack = { navigator.goBack() })
     }
+    entry<Screen.IslandSetup> {
+        com.d4viddf.hyperbridge.renderer.IslandSetup(onBack = { navigator.goBack() })
+    }
     entry<Screen.Licenses> {
         LicensesScreen(onBack = { navigator.goBack() })
     }
