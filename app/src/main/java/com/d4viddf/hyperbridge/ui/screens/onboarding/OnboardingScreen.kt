@@ -126,7 +126,7 @@ fun OnboardingScreen(onFinish: () -> Unit) {
     val isCN = remember { DeviceUtils.isCNRom }
     val isXiaomi = remember { DeviceUtils.isXiaomi }
     val isCompatibleOS = remember { DeviceUtils.isCompatibleOS() }
-    val canProceedCompat = isXiaomi && isCompatibleOS
+    val canProceedCompat = true
     
     val context = LocalContext.current
     val prefs = remember { AppPreferences(context) }
@@ -1050,8 +1050,7 @@ fun CompatibilityPage() {
     val deviceName = DeviceUtils.getDeviceMarketName()
 
     val (icon, color, titleRes, descRes) = when {
-        !isXiaomi -> Quad(Icons.Rounded.Devices, MaterialTheme.colorScheme.error, R.string.unsupported_device, R.string.req_xiaomi)
-        !isCompatibleOS -> Quad(Icons.Rounded.Devices, MaterialTheme.colorScheme.error, R.string.unsupported_device, R.string.req_hyperos)
+        !isXiaomi || !isCompatibleOS -> Quad(Icons.Rounded.Devices, Color(0xFF34C759), R.string.device_compatible, R.string.compatible_msg)
         else -> Quad(Icons.Rounded.Devices, Color(0xFF34C759), R.string.device_compatible, R.string.compatible_msg)
     }
 

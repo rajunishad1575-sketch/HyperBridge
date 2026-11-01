@@ -10,6 +10,7 @@ sealed interface Screen : NavKey {
     @Serializable data object Home : Screen
     @Serializable data object Info : Screen
     @Serializable data object Setup : Screen
+    @Serializable data object IslandSetup : Screen
     @Serializable data object Licenses : Screen
     @Serializable data object Behavior : Screen
     @Serializable data object GlobalSettings : Screen
