@@ -32,6 +32,7 @@
 
 * **Native Visuals:** Transforms notifications into HyperOS system-style islands.
 * **Non-HyperOS Overlay Support:** Floating island pill overlay available for non-HyperOS devices.
+* **Camera Cutout Overlay:** Automatically detects display cutout on API 30+ or falls back below status bar.
 * **🎨 Theme Engine:** Customize every pixel.
     * **Theme Creator:** Built-in editor to design your own themes with real-time previews.
     * **Smart Colors:** Automatically extract vibrant brand colors from app icons.
