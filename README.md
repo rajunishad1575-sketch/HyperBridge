@@ -31,6 +31,7 @@
 ## 🚀 Features
 
 * **Native Visuals:** Transforms notifications into HyperOS system-style islands.
+* **Non-HyperOS Overlay Support:** Floating island pill overlay available for non-HyperOS devices.
 * **🎨 Theme Engine:** Customize every pixel.
     * **Theme Creator:** Built-in editor to design your own themes with real-time previews.
     * **Smart Colors:** Automatically extract vibrant brand colors from app icons.
